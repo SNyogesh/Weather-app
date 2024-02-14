@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #2044d2;
+    color: white;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container > .header{
+    padding: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.header > .inputField > input{
+    padding: 0.8rem 2rem 0.8rem 1.2rem;
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+    box-shadow: rgba(17,17,26,0.1) 0px 4px 16px,rgba(17,17,26,0.05) 0px 8px 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header > .inputField > input:focus-visible{
+    outline: 2px solid black;
+}   
+.header .search .searchBtn{
+    padding: 0.6rem;
+    border-radius: 25%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgba(17,17,26,0.1) 0px 4px 16px,rgba(17,17,26,0.05) 0px 8px 32px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .search .searchBtn:focus-visible,
+.header .search .searchBtn:hover{
+    outline: 2px solid rgba(0, 0, 0, 0.196);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search .searchBtn img{
+    
+    background-size: cover;
+    background-position: center;
 }
-
-.App-link {
-  color: #61dafb;
+.container .main{
+    
+    text-align: center;
+   
 }
+.main .imgDisplay{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.main .temp{
+    font-size: 3.2rem;
+    
+}
+.main .temp .sup{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.main .temp .unit{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-left: 4px;
+}
+.main .climate{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.main .location{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container .footer{
+    padding: 4rem 3rem;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+}
+.footer .fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.fields .img img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+.fields .units{
+    margin-left: 8px;
+}
+.fields .units .value{
+    font-size: 1.6rem;
+    
+}
+.fields .units .label{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.fields .units .metrics{
+    font-size: 1.4rem;
+    font-weight: 500;
 }
