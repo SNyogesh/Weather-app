@@ -74,12 +74,12 @@ export default function Display() {
             <input type='text' className='inputText' placeholder='Enter city name' onChange={(e)=> setText(e.target.value)} value={Text} required />
           </div>
           <div className="search">
-            <button type='button' className='searchBtn' onClick={()=>search()}><img src={searchIcon} /></button>
+            <button type='button' className='searchBtn' onClick={()=>search()}><img src={searchIcon} alt="search"  /></button>
             
           </div>
         </div>
         <div className="main">
-          <img src={Img} alt="" className="imgDisplay" />
+          <img src={Img} alt="img" className="imgDisplay" />
           <h5 className="climate">{Climate}</h5>
           <h1 className="temp">{Temp}<sup className="sup">º</sup><span className="unit">C</span></h1>
           
@@ -87,7 +87,7 @@ export default function Display() {
         </div>  
         <div className="footer">
           <div className="fields">
-            <span className="img"><img src={humidity}/></span>
+            <span className="img"><img src={humidity} alt="humidity"/></span>
             <div className="units">
               <h5 className="value">{Humidity}<span className="metrics">%</span> </h5>
               <h6 className="label">Humidity</h6>
@@ -95,7 +95,7 @@ export default function Display() {
            
           </div>
           <div className="fields">
-            <span className="img"><img src={wind}/></span>
+            <span className="img"><img src={wind} alt="wind"/></span>
             <div className="units">
               <h5 className="value">{WindSpeed} <span className="metrics">km/hr</span></h5>
               <h6 className="label">Windspeed</h6>
